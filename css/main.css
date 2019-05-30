@@ -206,7 +206,7 @@ ol li {
 
 /* NAVIGATION BAR + HEADER STYLE START */
 header {
-  background: transparent;
+  background: red;
   width: 100%;
   position: relative;
 
@@ -217,12 +217,13 @@ header.sticky {
   top: 0;
   left: 0;
   right: 0;
-  background: rgba(0, 0, 0, 0.6);
+  background: green;
   -webkit-transform: translateY(-200%);
   transform: translateY(-200%);
   -webkit-transition: 0.2s;
   transition: 0.2s;
   z-index: 5;
+  opacity: 0.9;
 }
 
 body.scroll header.sticky {
@@ -231,34 +232,31 @@ body.scroll header.sticky {
 }
 
 
+/* nav */
 .nav-wrapper {
   max-width: 1200px;
   margin: 0 auto;
   position: relative;
   padding: 7px 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  background:black;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;  /*between content is space */
+  align-items: center;
 }
 
+/* li's */
 nav.nav-wrapper ul li {
   display: inline-block;
   padding: 0 10px;
   margin-bottom: 0;
 }
-
-nav.nav-wrapper ul li a {
+/* links on menu */
+nav.nav-wrapper ul li a {               
   font-size: 17px;
   line-height: 22px;
   text-decoration: none;
   color: white;
-  cursor: pointer;
+  cursor: pointer;             /* mouse over text is coursor */
   border-bottom: 1px solid transparent;
   padding-bottom: 3px;
   -webkit-transition: 0.3s;
@@ -266,7 +264,8 @@ nav.nav-wrapper ul li a {
 }
 
 nav.nav-wrapper ul li a:hover {
-  border-bottom: 1px solid #ffffff;
+  border-bottom: 1px solid white;
+
 }
 
 header .logo img {
