@@ -13,6 +13,7 @@
 <body>
     <div class="main-overlay js-main-overlay"></div>
     <section class="cover-main" id="home">
+            <!--header-->
         <header>
             <nav class="nav-wrapper">
                 <div class="logo">
@@ -53,8 +54,14 @@
     
 
     <script src="scripts/jquery-3.4.1.js"></script>
+    <script src="scripts/parallax.min.js"></script>
     <script src="scripts/main.js"></script>
 
+    <!--parallax-->
+    <script>
+        var scene = document.getElementById('scene');
+        var parallax = new Parallax(scene);
+    </script>
    
 </body>
 
